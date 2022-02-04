@@ -4,7 +4,7 @@ ul {
 
 body {
   background-color: #edf1f6;
-  margin: 30px;
+  margin: 0 10% 0 10%;
 }
 
 .section-title {
@@ -12,8 +12,8 @@ body {
   border-left: #a76ce5 solid 10px;
   padding-left: 20px;
   margin-left: 20px;
-  margin-bottom: 15px;
-  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-top: 20px;
   height: 50px;
   width: 300px;
   font-size: 36px;
@@ -35,11 +35,6 @@ body {
   align-content: space-around;
 }
 
-.my-product-title {
-  display: flex;
-  padding: 20px;
-}
-
 #product-title {
   font-size: 30px;
   text-shadow: #000;
@@ -50,13 +45,16 @@ body {
 .products {
   display: flex;
   width: 100%;
+  justify-content: space-around;
 }
 
 .my-product-content {
   background-color: #fff;
   width: 50%;
-  margin: 30px;
+  margin: 0 10px 0 10px;
   border-radius: 30px;
+  display: flex;
+  align-items: center;
 }
 
 .skill-name {
@@ -93,8 +91,11 @@ body {
 }
 
 img {
-  margin: 20px;
+  /* margin: 20px; */
   border-radius: 30px;
+}
+.picture {
+  margin: 20px;
 }
 li {
   margin-left: 20px;

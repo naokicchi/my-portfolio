@@ -6,6 +6,7 @@ const grapesdiv = document.getElementById("grapes-detail");
 
 let isHairKarte = false;
 let isGrapes = false;
+let isWhere = "";
 
 const unLists = document.createElement("ul");
 const list1 = document.createElement("li");
@@ -53,32 +54,30 @@ const createList = function (key) {
 };
 
 hairKarte.onmouseover = function () {
-  if (isHairKarte !== true) {
+  if (isWhere !== "hair") {
     createList(1);
-    isHairKarte = true;
+    //isHairKarte = true;
+    isWhere = "hair";
   }
 };
 
-hairKarte.onmouseout = function () {
-  if (isHairKarte === true) {
-    hairdiv.removeChild(unLists);
-    isHairKarte = false;
-  }
-};
+// hairKarte.onmouseout = function () {
+//   hairdiv.removeChild(unLists);
+//   isHairKarte = false;
+// };
 
 grapes.onmouseover = function () {
-  if (isGrapes !== true) {
+  if (isWhere !== "grape") {
     createList(2);
-    isGrapes = true;
+    //isGrapes = true;
+    isWhere = "grape";
   }
 };
 
-grapes.onmouseout = function () {
-  if (isGrapes === true) {
-    grapesdiv.removeChild(unLists);
-    isGrapes = false;
-  }
-};
+// grapes.onmouseout = function () {
+//   grapesdiv.removeChild(unLists);
+//   isGrapes = false;
+// };
 
 const images = ["images/pic2.png", "images/geek_ios.png", "images/pic4.png"];
 const secondImages = [
