@@ -1,0 +1,73 @@
+ul {
+  list-style: disc;
+}
+
+body {
+  background-color: #edf1f6;
+}
+
+.section-title {
+  color: #844dbe;
+  border-left: #a76ce5 solid 10px;
+  padding-left: 20px;
+  margin-left: 20px;
+  height: 50px;
+  width: 300px;
+  font-size: 36px;
+}
+
+.my-profile-content {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin: 3rem;
+  border-radius: 30px;
+  background-color: #fff;
+}
+
+.prof-detail {
+  margin-left: 50px;
+  line-height: 40px;
+}
+
+.my-product-title {
+  display: flex;
+  font-size: 30px;
+  text-shadow: #000;
+  font-weight: bold;
+}
+.products {
+  display: flex;
+  width: 100%;
+}
+
+.my-product-content {
+  background-color: #fff;
+  width: 50%;
+  margin: 30px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-radius: 30px;
+}
+
+.skill-name {
+  font-size: 22px;
+  color: #56f0cb;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.my-skill-content {
+  background-color: #fff;
+  margin: 30px;
+  padding: 20px;
+  border-radius: 30px;
+}
+img {
+  margin: 20px;
+}
+li {
+  margin-left: 20px;
+}
