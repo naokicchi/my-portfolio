@@ -1,8 +1,12 @@
 const hairKarte = document.getElementById("my-products-hairkarte");
 const grapes = document.getElementById("my-products-grapes");
 
+const hairdiv = document.getElementById("hairKarte-detail");
+const grapesdiv = document.getElementById("grapes-detail");
+
 let isHairKarte = false;
 let isGrapes = false;
+
 const unLists = document.createElement("ul");
 const list1 = document.createElement("li");
 const list2 = document.createElement("li");
@@ -36,14 +40,14 @@ const createList = function (key) {
       list2.textContent = hairKarteObj.period;
       list3.textContent = hairKarteObj.intro;
       list4.textContent = hairKarteObj.url;
-      hairKarte.append(unLists);
+      hairdiv.append(unLists);
       break;
     case 2:
       list1.textContent = grapesObj.lang;
       list2.textContent = grapesObj.period;
       list3.textContent = grapesObj.intro;
       list4.textContent = grapesObj.url;
-      grapes.append(unLists);
+      grapesdiv.append(unLists);
       break;
   }
 };
@@ -57,7 +61,7 @@ hairKarte.onmouseover = function () {
 
 hairKarte.onmouseout = function () {
   if (isHairKarte === true) {
-    hairKarte.removeChild(unLists);
+    hairdiv.removeChild(unLists);
     isHairKarte = false;
   }
 };
@@ -71,7 +75,31 @@ grapes.onmouseover = function () {
 
 grapes.onmouseout = function () {
   if (isGrapes === true) {
-    grapes.removeChild(unLists);
+    grapesdiv.removeChild(unLists);
     isGrapes = false;
   }
 };
+
+const images = ["images/pic2.png", "images/geek_ios.png", "images/pic4.png"];
+const secondImages = [
+  "images/geek_zentai.png",
+  "images/pic7.jpg",
+  "images/pic8.png",
+];
+console.log(images.length);
+const firstImageView = document.getElementById("firstImages");
+const secondImageView = document.getElementById("secondImages");
+let imageCount = 0;
+
+const slideShow = function () {
+  imageCount++;
+
+  if (imageCount >= images.length) {
+    imageCount = 0;
+  }
+  console.log(imageCount);
+  firstImageView.src = images[imageCount];
+  secondImageView.src = secondImages[imageCount];
+};
+
+setInterval(slideShow, 1000);

@@ -12,6 +12,8 @@ body {
   border-left: #a76ce5 solid 10px;
   padding-left: 20px;
   margin-left: 20px;
+  margin-bottom: 15px;
+  margin-top: 15px;
   height: 50px;
   width: 300px;
   font-size: 36px;
@@ -19,24 +21,31 @@ body {
 
 .my-profile-content {
   display: flex;
-  justify-content: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  margin: 3rem;
+  justify-content: space-around;
+  align-items: center;
   border-radius: 30px;
   background-color: #fff;
+  padding: 15px 10% 15px 10%;
 }
 
 .prof-detail {
-  margin-left: 50px;
   line-height: 40px;
+  display: flex;
+  flex-flow: column;
+  align-content: space-around;
 }
 
 .my-product-title {
   display: flex;
+  padding: 20px;
+}
+
+#product-title {
   font-size: 30px;
   text-shadow: #000;
   font-weight: bold;
+  text-align: center;
+  width: 100%;
 }
 .products {
   display: flex;
@@ -47,8 +56,6 @@ body {
   background-color: #fff;
   width: 50%;
   margin: 30px;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
   border-radius: 30px;
 }
 
@@ -59,15 +66,35 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.my-skill-div {
+  display: flex;
+  background-color: #fff;
+  border-radius: 30px;
+  align-items: center;
+}
 
 .my-skill-content {
-  background-color: #fff;
   margin: 30px;
   padding: 20px;
-  border-radius: 30px;
 }
+
+.my-links-div {
+  display: flex;
+  border-radius: 30px;
+  justify-content: space-around;
+  padding-left: 30%;
+  padding-right: 30%;
+  margin-top: 50px;
+}
+
+.other-picture {
+  display: flex;
+  align-items: center;
+}
+
 img {
   margin: 20px;
+  border-radius: 30px;
 }
 li {
   margin-left: 20px;
