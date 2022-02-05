@@ -8,7 +8,10 @@ let isHairKarte = false;
 let isGrapes = false;
 let isWhere = "";
 
-const productDetailDiv = document.createElement("div");
+const productDiv = document.createElement("div");
+productDiv.className = "product-detail";
+
+const introDiv = document.createElement("div");
 const unLists = document.createElement("ul");
 const list1 = document.createElement("li");
 const list2 = document.createElement("li");
@@ -18,8 +21,18 @@ unLists.append(list1);
 unLists.append(list2);
 unLists.append(list3);
 unLists.append(list4);
-productDetailDiv.className = "product-info";
-productDetailDiv.append(unLists);
+introDiv.append(unLists);
+
+const imgDiv = document.createElement("div");
+imgDiv.className = "product-image";
+const img1 = document.createElement("img");
+const img2 = document.createElement("img");
+
+imgDiv.append(img1);
+imgDiv.append(img2);
+
+productDiv.append(introDiv);
+productDiv.append(imgDiv);
 
 hairKarteObj = {
   lang: "開発言語：swift",
@@ -44,43 +57,59 @@ const createList = function (key) {
       list2.textContent = hairKarteObj.period;
       list3.textContent = hairKarteObj.intro;
       list4.textContent = hairKarteObj.url;
-      hairdiv.append(productDetailDiv);
+      img1.src = "images/hair1.png";
+      img2.src = "images/hair2.png";
+      introDiv.className = "hair-info";
+      imgDiv.className = "hair-img";
+      hairdiv.append(productDiv);
+      img1.width = 200;
+      img2.width = 200;
+      img1.height = auto;
+      img2.height = auto;
       break;
     case 2:
       list1.textContent = grapesObj.lang;
       list2.textContent = grapesObj.period;
       list3.textContent = grapesObj.intro;
       list4.textContent = grapesObj.url;
-      grapesdiv.append(productDetailDiv);
+      img1.src = "images/grape-img1.png";
+      img2.src = "images/grape-img2.png";
+      introDiv.className = "grape-info";
+      imgDiv.className = "grape-img";
+      img1.width = auto;
+      img2.width = auto;
+      img1.height = 400;
+      img2.height = 400;
+
+      grapesdiv.append(productDiv);
       break;
   }
 };
 
 hairKarte.onmouseover = function () {
-  if (isWhere !== "hair") {
+  if (isHairKarte !== true) {
     createList(1);
-    //isHairKarte = true;
-    isWhere = "hair";
+    isHairKarte = true;
   }
 };
 
-// hairKarte.onmouseout = function () {
-//   hairdiv.removeChild(unLists);
-//   isHairKarte = false;
-// };
+hairKarte.onmouseout = function () {
+  hairdiv.removeChild(unLists);
+  isHairKarte = false;
+};
 
 grapes.onmouseover = function () {
-  if (isWhere !== "grape") {
+  if (isGrapes !== true) {
     createList(2);
-    //isGrapes = true;
-    isWhere = "grape";
+    isGrapes = true;
+    //isWhere = "grape";
   }
 };
 
-// grapes.onmouseout = function () {
-//   grapesdiv.removeChild(unLists);
-//   isGrapes = false;
-// };
+grapes.onmouseout = function () {
+  grapesdiv.removeChild(unLists);
+  isGrapes = false;
+};
 
 const images = ["images/pic2.png", "images/geek_ios.png", "images/pic4.png"];
 const secondImages = [

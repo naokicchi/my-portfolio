@@ -27,6 +27,11 @@ body {
   background-color: #fff;
   padding: 15px 10% 15px 10%;
 }
+.products {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
 
 .prof-detail {
   line-height: 40px;
@@ -43,13 +48,17 @@ body {
   font-family: monospace;
   /* width: 100%; */
 }
+.product-appear {
+  display: flex;
+  flex-flow: column;
+}
 
 .product-detail {
   padding: 0 10px 15px 10px;
   display: flex;
-  flex-flow: column;
   align-items: center;
 }
+
 .product-info {
   padding-right: 15px;
   width: 60%;
@@ -63,6 +72,14 @@ body {
   display: flex;
   align-items: center;
   width: auto;
+}
+
+.hair-img {
+  display: flex;
+}
+.grape-img {
+  display: flex;
+  flex-flow: column;
 }
 
 .skill-name {
