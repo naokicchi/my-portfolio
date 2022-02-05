@@ -35,26 +35,34 @@ body {
   align-content: space-around;
 }
 
-#product-title {
+.product-title {
   font-size: 30px;
   text-shadow: #000;
   font-weight: bold;
   text-align: center;
-  width: 100%;
+  font-family: monospace;
+  /* width: 100%; */
 }
-.products {
+
+.product-detail {
+  padding: 0 10px 15px 10px;
   display: flex;
-  width: 100%;
-  justify-content: space-around;
+  flex-flow: column;
+  align-items: center;
+}
+.product-info {
+  padding-right: 15px;
+  width: 60%;
 }
 
 .my-product-content {
   background-color: #fff;
   width: 50%;
-  margin: 0 10px 0 10px;
+  margin: 10px 10px 0 10px;
   border-radius: 30px;
   display: flex;
   align-items: center;
+  width: auto;
 }
 
 .skill-name {

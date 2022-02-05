@@ -8,6 +8,7 @@ let isHairKarte = false;
 let isGrapes = false;
 let isWhere = "";
 
+const productDetailDiv = document.createElement("div");
 const unLists = document.createElement("ul");
 const list1 = document.createElement("li");
 const list2 = document.createElement("li");
@@ -17,6 +18,8 @@ unLists.append(list1);
 unLists.append(list2);
 unLists.append(list3);
 unLists.append(list4);
+productDetailDiv.className = "product-info";
+productDetailDiv.append(unLists);
 
 hairKarteObj = {
   lang: "開発言語：swift",
@@ -41,14 +44,14 @@ const createList = function (key) {
       list2.textContent = hairKarteObj.period;
       list3.textContent = hairKarteObj.intro;
       list4.textContent = hairKarteObj.url;
-      hairdiv.append(unLists);
+      hairdiv.append(productDetailDiv);
       break;
     case 2:
       list1.textContent = grapesObj.lang;
       list2.textContent = grapesObj.period;
       list3.textContent = grapesObj.intro;
       list4.textContent = grapesObj.url;
-      grapesdiv.append(unLists);
+      grapesdiv.append(productDetailDiv);
       break;
   }
 };
@@ -93,12 +96,9 @@ let imageCount = 0;
 const slideShow = function () {
   imageCount++;
 
-  if (imageCount >= images.length) {
-    imageCount = 0;
-  }
   console.log(imageCount);
-  firstImageView.src = images[imageCount];
-  secondImageView.src = secondImages[imageCount];
+  firstImageView.src = images[imageCount % 3];
+  secondImageView.src = secondImages[imageCount % 3];
 };
 
-setInterval(slideShow, 1000);
+setInterval(slideShow, 2000);
