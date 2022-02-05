@@ -24,7 +24,7 @@ unLists.append(list4);
 introDiv.append(unLists);
 
 const imgDiv = document.createElement("div");
-imgDiv.className = "product-image";
+// imgDiv.className = "product-image";
 const img1 = document.createElement("img");
 const img2 = document.createElement("img");
 
@@ -94,7 +94,7 @@ hairKarte.onmouseover = function () {
 };
 
 hairKarte.onmouseout = function () {
-  hairdiv.removeChild(unLists);
+  hairdiv.removeChild(productDiv);
   isHairKarte = false;
 };
 
@@ -102,12 +102,11 @@ grapes.onmouseover = function () {
   if (isGrapes !== true) {
     createList(2);
     isGrapes = true;
-    //isWhere = "grape";
   }
 };
 
 grapes.onmouseout = function () {
-  grapesdiv.removeChild(unLists);
+  grapesdiv.removeChild(productDiv);
   isGrapes = false;
 };
 
@@ -117,6 +116,7 @@ const secondImages = [
   "images/pic7.jpg",
   "images/pic8.png",
 ];
+
 console.log(images.length);
 const firstImageView = document.getElementById("firstImages");
 const secondImageView = document.getElementById("secondImages");
