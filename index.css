@@ -25,12 +25,7 @@ body {
   align-items: center;
   border-radius: 30px;
   background-color: #fff;
-  padding: 15px 10% 15px 10%;
-}
-.products {
-  display: flex;
-  flex-flow: column;
-  width: 100%;
+  padding: 15px 10px 15px 10px;
 }
 
 .prof-detail {
@@ -40,13 +35,18 @@ body {
   align-content: space-around;
 }
 
+.products {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+
 .product-title {
   font-size: 30px;
   text-shadow: #000;
   font-weight: bold;
   text-align: center;
   font-family: monospace;
-  /* width: 100%; */
 }
 .product-appear {
   display: flex;
@@ -57,6 +57,7 @@ body {
   padding: 0 10px 15px 10px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .product-info {
@@ -67,7 +68,8 @@ body {
 .my-product-content {
   background-color: #fff;
   width: 50%;
-  margin: 10px 10px 0 10px;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 0 10px 0;
   border-radius: 30px;
   display: flex;
   align-items: center;

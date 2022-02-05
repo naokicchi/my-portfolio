@@ -63,9 +63,8 @@ const createList = function (key) {
       hairdiv.append(productDiv);
       img1.width = 200;
       img2.width = 200;
-      img1.height = auto;
-      img2.height = auto;
-      hairdiv.append(productDiv);
+      img1.height = 385.71;
+      img2.height = 385.71;
       break;
     case 2:
       list1.textContent = grapesObj.lang;
@@ -76,12 +75,13 @@ const createList = function (key) {
       img2.src = "images/grape-img2.png";
       introDiv.className = "grape-info";
       imgDiv.className = "grape-img";
-
       grapesdiv.append(productDiv);
-      img1.width = auto;
-      img2.width = auto;
-      img1.height = 400;
-      img2.height = 400;
+
+      img1.height = 250;
+      img2.height = 250;
+      img1.width = 426.4;
+      img2.width = 426.4;
+
       break;
   }
 };
