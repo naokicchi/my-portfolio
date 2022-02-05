@@ -6,7 +6,6 @@ const grapesdiv = document.getElementById("grapes-detail");
 
 let isHairKarte = false;
 let isGrapes = false;
-let isWhere = "";
 
 const productDiv = document.createElement("div");
 productDiv.className = "product-detail";
@@ -24,7 +23,6 @@ unLists.append(list4);
 introDiv.append(unLists);
 
 const imgDiv = document.createElement("div");
-// imgDiv.className = "product-image";
 const img1 = document.createElement("img");
 const img2 = document.createElement("img");
 
@@ -61,11 +59,13 @@ const createList = function (key) {
       img2.src = "images/hair2.png";
       introDiv.className = "hair-info";
       imgDiv.className = "hair-img";
+
       hairdiv.append(productDiv);
       img1.width = 200;
       img2.width = 200;
       img1.height = auto;
       img2.height = auto;
+      hairdiv.append(productDiv);
       break;
     case 2:
       list1.textContent = grapesObj.lang;
@@ -76,12 +76,12 @@ const createList = function (key) {
       img2.src = "images/grape-img2.png";
       introDiv.className = "grape-info";
       imgDiv.className = "grape-img";
+
+      grapesdiv.append(productDiv);
       img1.width = auto;
       img2.width = auto;
       img1.height = 400;
       img2.height = 400;
-
-      grapesdiv.append(productDiv);
       break;
   }
 };
