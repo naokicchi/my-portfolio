@@ -8,6 +8,7 @@ const period = document.getElementById("period");
 const link_url = document.getElementById("link-url");
 const product_image = document.getElementById("product-image");
 const title = document.getElementById("title");
+const link = document.getElementById("link");
 
 for (let i = 0; i < tabs.length; i++) {
   tabs[i].onclick = function () {
@@ -16,6 +17,7 @@ for (let i = 0; i < tabs.length; i++) {
     img1.width = obj[i].width;
     img2.src = obj[i].img2;
     img2.width = obj[i].width;
+    link.href = obj[i].link;
 
     lang.textContent = obj[i].lang;
     intro.textContent = obj[i].intro;
@@ -43,6 +45,7 @@ const obj = [
     img2: "images/hair2.png",
     imageClass: "ios-image",
     width: 200,
+    link: "https://apps.apple.com/jp/app/hairkarte/id1565355951",
   },
   {
     title: "ジョブマネ",
@@ -56,6 +59,7 @@ const obj = [
     img2: "images/jobmane-image2.png",
     imageClass: "ios-image",
     width: 200,
+    link: "https://apps.apple.com/jp/app/id1609270122",
   },
   {
     title: "grapes!!",
@@ -69,6 +73,7 @@ const obj = [
     img2: "images/grape-img2.png",
     imageClass: "web-image",
     width: 360,
+    link: "https://naokicchi.github.io/Grapeschi/Final_Ex.html",
   },
 ];
 
