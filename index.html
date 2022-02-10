@@ -38,35 +38,74 @@
 
     <div class="my-products">
       <div class="section-title">My Product</div>
-      <div class="products">
-        <div class="my-product-content" id="my-products-hairkarte">
-          <div class="product-appear">
-            <a href="https://apps.apple.com/jp/app/hairkarte/id1565355951">
+
+      <div class="tab-panel">
+        <!--タブ-->
+        <ul class="tab-group">
+          <li class="tab tab-A is-active">
+            <div>
               <img
                 src="images/hairkarte.jpg"
                 width="150"
                 height="150"
                 class="picture"
               />
-            </a>
+            </div>
             <div class="product-title">HairKarte</div>
-          </div>
-          <div class="product-detail" id="hairKarte-detail"></div>
-        </div>
-
-        <div id="my-products-grapes" class="my-product-content">
-          <div class="product-appear">
-            <a href="https://naokicchi.github.io/Grapeschi/Final_Ex.html">
+          </li>
+          <li class="tab tab-B">
+            <div>
+              <img
+                src="images/jobmane.png"
+                width="150"
+                height="150"
+                class="picture"
+              />
+            </div>
+            <div class="product-title">ジョブマネ</div>
+          </li>
+          <li class="tab tab-C">
+            <div>
               <img
                 src="images/grapes.jpg"
                 width="150"
                 height="150"
                 class="picture"
               />
-            </a>
+            </div>
             <div class="product-title">Grapes!!</div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="products">
+        <div class="my-product-content" id="my-product">
+          <div class="product-top">
+            <a href="https://apps.apple.com/jp/app/hairkarte/id1565355951">
+              <img
+                id="icon-image"
+                src="images/hairkarte.jpg"
+                width="150"
+                height="150"
+                class="picture"
+              />
+            </a>
+            <div id="title" class="product-title">HairKarte</div>
           </div>
-          <div class="product-detail" id="grapes-detail"></div>
+          <div id="product-detail">
+            <div id="lang">開発言語：swift</div>
+            <div id="period">制作期間：3ヶ月</div>
+            <div id="intro">
+              紹介文：ヘアスタイル共有SNSアプリケーションです。ヘアスタイルを検索、投稿、お気に入り追加して自分だけのヘアカタログを作成！フォロー機能もあるので自分のみたいユーザーを選別できる！
+            </div>
+            <div id="link-url">
+              appStoreURL : https://apps.apple.com/jp/app/hairkarte/id1565355951
+            </div>
+          </div>
+          <div id="product-image" class="ios-image">
+            <img id="first-img" src="images/hair1.png" width="200" />
+            <img id="second-img" src="images/hair2.png" width="200" />
+          </div>
         </div>
       </div>
     </div>
@@ -142,7 +181,6 @@
             class="picture"
           />
         </a>
-
         <a href="https://qiita.com/naoking21">
           <img
             src="images/qiita.png"
