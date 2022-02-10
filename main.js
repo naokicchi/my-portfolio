@@ -38,7 +38,7 @@ const obj = [
     intro:
       " 紹介文：ヘアスタイル共有SNSアプリケーションです。ヘアスタイルを検索、投稿、お気に入り追加して自分だけのヘアカタログを作成！フォロー機能もあるので自分のみたいユーザーを選別できる！",
     url: "appStoreURL : https://apps.apple.com/jp/app/hairkarte/id1565355951",
-    icon_img: "images/hairkarte.jpg",
+    icon_img: "images/hairkarte.png",
     img1: "images/hair1.png",
     img2: "images/hair2.png",
     imageClass: "ios-image",

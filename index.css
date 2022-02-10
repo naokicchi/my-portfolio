@@ -4,7 +4,7 @@ ul {
 
 body {
   background-color: #edf1f6;
-  margin: 0 10% 0 10%;
+  margin: 20px 10% 0 10%;
 }
 
 .section-title {
@@ -58,6 +58,8 @@ body {
   list-style: none;
   text-align: center;
   cursor: pointer;
+  border-radius: 60px;
+  box-shadow: 8px 9px 10px 5px rgba(44, 48, 49, 0.445);
 }
 .panel-group {
   height: 100px;
@@ -69,8 +71,9 @@ body {
 }
 .tab.is-active {
   background: rgba(132, 78, 207, 0.527);
-  border-radius: 60px;
+
   color: #fff;
+
   transition: all 0.1s ease-out;
 }
 
@@ -87,6 +90,7 @@ body {
 .product-top {
   display: flex;
   flex-flow: column;
+  margin: 10px;
 }
 
 .product-detail {
@@ -102,6 +106,14 @@ body {
 .web-image {
   display: flex;
   flex-flow: column;
+}
+.picture {
+  border-radius: 30px;
+  padding: 0;
+  margin: 20px;
+}
+.selected-img {
+  box-shadow: 8px 9px 10px 5px rgba(44, 48, 49, 0.445);
 }
 
 .skill-name {
@@ -141,9 +153,7 @@ img {
   /* margin: 20px; */
   border-radius: 30px;
 }
-.picture {
-  margin: 20px;
-}
+
 li {
   margin-left: 20px;
   display: flex;
