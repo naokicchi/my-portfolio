@@ -64,7 +64,7 @@ const obj = [
     intro:
       "紹介文：葡萄の紹介サイトです。生産数国内TOPの都道府県の葡萄の情報を記載しています。品種紹介もしているのでみてください。",
     url: "URL : https://naokicchi.github.io/Grapeschi/Final_Ex.html",
-    icon_img: "images/grapes.jpg",
+    icon_img: "images/grapes.png",
     img1: "images/grape-img1.png",
     img2: "images/grape-img2.png",
     imageClass: "web-image",

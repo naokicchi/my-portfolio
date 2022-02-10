@@ -86,11 +86,21 @@ body {
   align-items: center;
   width: 100%;
 }
+.toLink {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(83, 80, 78, 0.795);
+  margin-bottom: 10px;
+}
 
 .product-top {
   display: flex;
   flex-flow: column;
   margin: 10px;
+}
+.product-title {
+  text-align: center;
 }
 
 .product-detail {
@@ -109,11 +119,12 @@ body {
 }
 .picture {
   border-radius: 30px;
-  padding: 0;
-  margin: 20px;
+
+  margin: 20px 20px 10px 20px;
 }
 .selected-img {
   box-shadow: 8px 9px 10px 5px rgba(44, 48, 49, 0.445);
+  margin-bottom: 4px;
 }
 
 .skill-name {
@@ -150,7 +161,6 @@ body {
 }
 
 img {
-  /* margin: 20px; */
   border-radius: 30px;
 }
 
