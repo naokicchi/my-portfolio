@@ -91,7 +91,6 @@ let imageCount = 0;
 
 const slideShow = function () {
   imageCount++;
-
   console.log(imageCount);
   firstImageView.src = images[imageCount % 3];
   secondImageView.src = secondImages[imageCount % 3];
