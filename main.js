@@ -48,7 +48,7 @@ const obj = [
     link: "https://apps.apple.com/jp/app/hairkarte/id1565355951",
   },
   {
-    title: "ジョブマネ",
+    title: "ジョブマネ(ios)",
     lang: "開発言語：swift",
     period: "制作期間：2週間",
     intro:
@@ -60,6 +60,20 @@ const obj = [
     imageClass: "ios-image",
     width: 200,
     link: "https://apps.apple.com/jp/app/id1609270122",
+  },
+  {
+    title: "ジョブマネ(webアプリケーション)",
+    lang: "開発言語：vue.js/html/css",
+    period: "制作期間：1ヶ月",
+    intro:
+      "紹介文：就活生向けアプリ / 企業情報・タスク・オープンESを一括管理！就活生向けアプリです。企業情報・タスク・オープンESを一括管理可能",
+    url: "URL : https://knobsalmonproject.web.app/",
+    icon_img: "images/jobmane.png",
+    img1: "images/jobmane-web.png",
+    img2: "images/jobmane-web-2.png",
+    imageClass: "web-image",
+    width: 360,
+    link: "https://knobsalmonproject.web.app/",
   },
   {
     title: "grapes!!",

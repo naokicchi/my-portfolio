@@ -58,11 +58,12 @@ body {
 }
 
 .product-title {
-  font-size: 30px;
+  font-size: 20px;
   text-shadow: #000;
   font-weight: bold;
   text-align: center;
   font-family: "montserrat";
+  padding: 10px;
 }
 
 .tab-group {
@@ -178,6 +179,7 @@ body {
 
 img {
   border-radius: 30px;
+  padding: 5px;
 }
 
 li {
