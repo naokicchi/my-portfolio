@@ -1,6 +1,8 @@
 body {
   background-color: #edf1f6;
-  margin: 20px 10% 0 10%;
+}
+.content {
+  margin: 20px 10% 20px 10%;
 }
 .name {
   font-size: 20px;
@@ -169,6 +171,7 @@ body {
 .selected-img {
   box-shadow: 8px 9px 10px 5px rgba(44, 48, 49, 0.445);
   margin-bottom: 4px;
+  border-radius: 30%;
   background: rgba(0, 0, 0, 0);
   width: 40%;
 }
@@ -213,15 +216,23 @@ body {
   max-width: 300px;
 }
 
-img {
-  border-radius: 30px;
-  margin: 5px;
-}
-
 li {
   margin-left: 20px;
   display: flex;
   flex-flow: column;
+}
+.top-img {
+  margin: 0;
+  border-radius: 0;
+}
+.icon-image {
+  border-radius: 30px;
+}
+.slide-picture {
+  border-radius: 30px;
+}
+.top-img-ios {
+  display: none;
 }
 
 @media screen and (max-width: 100px) {
@@ -289,6 +300,12 @@ li {
     line-height: 17px;
   }
   .my-product-content {
+    display: block;
+  }
+  .top-img-web {
+    display: none;
+  }
+  .top-img-ios {
     display: block;
   }
 
