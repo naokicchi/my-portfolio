@@ -162,7 +162,7 @@ body {
 }
 .picture {
   border-radius: 20%;
-  margin: 20px auto;
+  margin: 10px auto 0px auto;
   width: 80%;
 }
 
@@ -274,8 +274,8 @@ li {
     padding: 10px;
   }
   .picture {
-    margin-top: 0px;
-    margin-bottom: 0px;
+    /* margin-top: 0px;
+    margin-bottom: 0px; */
     width: 50%;
   }
   .name {
@@ -319,5 +319,13 @@ li {
 
   .other-picture {
     display: none;
+  }
+  .tab-product-title {
+    font-size: 10px;
+    line-height: 10px;
+    margin: auto;
+  }
+  .tab {
+    height: 70px;
   }
 }

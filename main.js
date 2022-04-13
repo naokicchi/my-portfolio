@@ -68,7 +68,7 @@ const obj = [
     link: "https://apps.apple.com/jp/app/id1609270122",
   },
   {
-    title: "ジョブマネ(webアプリケーション)",
+    title: "ジョブマネ(webアプリ)",
     lang: "開発言語：vue.js/html/css",
     period: "制作期間：1ヶ月",
     intro:
