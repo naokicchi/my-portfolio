@@ -17,61 +17,48 @@
     />
 
     <div class="my-profile">
-      <div class="section-title">My Profile</div>
+      <div class="section-title">Profile</div>
       <div class="my-profile-content">
-        <img
-          src="images/myface.png"
-          alt="自画像"
-          width="400"
-          height="400"
-          class="picture"
-        />
+        <div class="pro-content-img">
+          <img src="images/myface.png" alt="自画像" />
+        </div>
 
         <div class="prof-detail">
-          <h2>氏名：髙橋 直輝(Takahashi Naoki)</h2>
-          <br />出身：2001年2月1日埼玉県さいたま市生まれ
-          <br />大学：上智大学情報理工学科 <br />出身高校：中央大学杉並高校
-          <br />趣味：旅行、おいしいもの食べること、バスケットボール、洋服見ること
+          <p class="name">髙橋 直輝(Takahashi Naoki)</p>
+          <p>出身：2001年2月1日埼玉県さいたま市生まれ</p>
+          <p>大学：上智大学情報理工学科</p>
+          <p>出身高校：中央大学杉並高校</p>
+          <p>趣味：旅行、食事、バスケットボール、洋服</p>
         </div>
       </div>
     </div>
 
     <div class="my-products">
-      <div class="section-title">My Product</div>
+      <div class="section-title">Product</div>
       <div class="tab-panel">
         <!--タブ-->
         <ul class="tab-group">
           <li class="tab tab-A is-active">
             <div>
-              <img src="images/hairkarte.png" width="150" class="picture" />
+              <img src="images/hairkarte.png" class="picture" />
             </div>
             <div class="product-title">HairKarte</div>
           </li>
           <li class="tab tab-B">
             <div>
-              <img
-                src="images/jobmane.png"
-                width="150"
-                height="150"
-                class="picture"
-              />
+              <img src="images/jobmane.png" class="picture" />
             </div>
             <div class="product-title">ジョブマネ(iOS)</div>
           </li>
           <li class="tab tab-C">
             <div>
-              <img
-                src="images/jobmane.png"
-                width="150"
-                height="150"
-                class="picture"
-              />
+              <img src="images/jobmane.png" class="picture" />
             </div>
             <div class="product-title">ジョブマネ(web)</div>
           </li>
           <li class="tab tab-D">
             <div>
-              <img src="images/grapes.png" width="150" class="picture" />
+              <img src="images/grapes.png" class="picture" />
             </div>
             <div class="product-title">Grapes!!</div>
           </li>
@@ -80,43 +67,40 @@
 
       <div class="products">
         <div class="my-product-content" id="my-product">
-          <div class="product-top">
-            <div class="picture selected-img">
+          <div class="product-intro">
+            <div class="product-top">
               <a
                 id="link"
                 href="https://apps.apple.com/jp/app/hairkarte/id1565355951"
               >
                 <img
                   id="icon-image"
+                  class="selected-img"
                   src="images/hairkarte.png"
-                  width="150"
-                  height="150"
                 />
               </a>
+              <div class="toLink">↑ tap to link</div>
+              <div id="title" class="product-title">HairKarte</div>
             </div>
-            <div class="toLink">↑ tap to link</div>
-            <div id="title" class="product-title">HairKarte</div>
-          </div>
-          <div id="product-detail">
-            <div id="lang">開発言語：swift</div>
-            <div id="period">制作期間：3ヶ月</div>
-            <div id="intro">
-              紹介文：ヘアスタイル共有SNSアプリケーションです。ヘアスタイルを検索、投稿、お気に入り追加して自分だけのヘアカタログを作成！フォロー機能もあるので自分のみたいユーザーを選別できる！
-            </div>
-            <div id="link-url">
-              appStoreURL : https://apps.apple.com/jp/app/hairkarte/id1565355951
+            <div id="product-detail">
+              <p id="lang">開発言語：swift</p>
+              <p id="period">制作期間：3ヶ月</p>
+              <p id="intro">
+                紹介文：ヘアスタイル共有SNSアプリケーションです。ヘアスタイルを検索、投稿、お気に入り追加して自分だけのヘアカタログを作成！フォロー機能もあるので自分のみたいユーザーを選別できる！
+              </p>
+              <p id="link-url">URL : https://apple.co/3AYHZsm</p>
             </div>
           </div>
           <div id="product-image" class="ios-image">
-            <img id="first-img" src="images/hair1.png" width="200" />
-            <img id="second-img" src="images/hair2.png" width="200" />
+            <img id="first-img" class="ios-image" src="images/hair1.png" />
+            <img id="second-img" class="ios-image" src="images/hair2.png" />
           </div>
         </div>
       </div>
     </div>
 
     <div class="my-skills">
-      <div class="section-title">My Skills</div>
+      <div class="section-title">Skill</div>
       <div class="my-skill-div">
         <div class="my-skill-content">
           <div class="skill-name">プログラミング経験</div>
@@ -145,54 +129,27 @@
           <img
             src="images/chokoku.png"
             id="firstImages"
-            width="300"
-            height="auto"
-            class="picture"
+            class="slide-picture"
           />
-          <img
-            src="images/pic7.jpg"
-            id="secondImages"
-            width="300"
-            height="auto"
-            class="picture"
-          />
+          <img src="images/pic7.jpg" id="secondImages" class="slide-picture" />
         </div>
       </div>
     </div>
 
     <div class="my-links">
+      <div class="section-title">Link</div>
       <div class="my-links-div">
         <a href="https://www.instagram.com/">
-          <img
-            src="images/insta.png"
-            width="120"
-            height="120"
-            class="picture"
-          />
+          <img src="images/insta.png" class="link-picture" />
         </a>
         <a href="https://twitter.com/swift_naoki">
-          <img
-            src="images/twitter.png"
-            width="120"
-            height="120"
-            class="picture"
-          />
+          <img src="images/twitter.png" class="link-picture" />
         </a>
         <a href="https://github.com/naokicchi">
-          <img
-            src="images/github.png"
-            width="120"
-            height="120"
-            class="picture"
-          />
+          <img src="images/github.png" class="link-picture" />
         </a>
         <a href="https://qiita.com/naoking21">
-          <img
-            src="images/qiita.png"
-            width="120"
-            height="120"
-            class="picture"
-          />
+          <img src="images/qiita.png" class="link-picture" />
         </a>
       </div>
     </div>

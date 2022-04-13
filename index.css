@@ -1,10 +1,10 @@
-ul {
-  list-style: disc;
-}
-
 body {
   background-color: #edf1f6;
   margin: 20px 10% 0 10%;
+}
+.name {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .section-title {
@@ -43,18 +43,34 @@ body {
   background-color: #fff;
   padding: 15px 10px 15px 10px;
 }
+.pro-content-img {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.pro-content-img img {
+  width: 80%;
+}
+.products {
+  display: flex;
+  width: 100%;
+}
+.product-intro {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
 
 .prof-detail {
+  width: 50%;
   line-height: 40px;
   display: flex;
   flex-flow: column;
   align-content: space-around;
-}
-
-.products {
-  display: flex;
-  flex-flow: column;
-  width: 100%;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .product-title {
@@ -75,8 +91,10 @@ body {
   list-style: none;
   text-align: center;
   cursor: pointer;
-  border-radius: 60px;
+  border-radius: 25%;
   box-shadow: 8px 9px 10px 5px rgba(44, 48, 49, 0.445);
+  width: 20%;
+  height: 50%;
 }
 .panel-group {
   height: 100px;
@@ -96,8 +114,8 @@ body {
 
 .my-product-content {
   background-color: #fff;
-  margin: 30px 0 10px 0;
-  padding: 20px 20px 20px 0;
+  margin: 30px auto 10px auto;
+  padding: 20px;
   border-radius: 30px;
   display: flex;
   align-items: center;
@@ -112,36 +130,43 @@ body {
 }
 
 .product-top {
-  display: flex;
-  flex-flow: column;
+  text-align: center;
   margin: 10px;
+  width: 80%;
 }
 .product-title {
   text-align: center;
 }
 
-.product-detail {
-  padding: 0 10px 15px 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#product-detail {
+  padding: 15px 20px;
+  width: 90%;
+  margin: 0px auto;
+}
+#product-image {
+  width: 100%;
 }
 .ios-image {
   display: flex;
+  width: 50%;
 }
 
 .web-image {
   display: flex;
   flex-flow: column;
+  width: 80%;
 }
 .picture {
-  border-radius: 30px;
-
-  margin: 20px 20px 10px 20px;
+  border-radius: 20%;
+  margin: 20px auto;
+  width: 80%;
 }
+
 .selected-img {
   box-shadow: 8px 9px 10px 5px rgba(44, 48, 49, 0.445);
   margin-bottom: 4px;
+  background: rgba(0, 0, 0, 0);
+  width: 40%;
 }
 
 .skill-name {
@@ -166,15 +191,22 @@ body {
 .my-links-div {
   display: flex;
   border-radius: 30px;
-  justify-content: space-around;
-  padding-left: 30%;
-  padding-right: 30%;
-  margin-top: 50px;
+  justify-content: center;
+}
+.link-picture {
+  width: 100%;
+  max-width: 150px;
 }
 
 .other-picture {
   display: flex;
   align-items: center;
+  width: 50%;
+}
+.slide-picture {
+  width: 45%;
+  object-fit: cover;
+  max-width: 300px;
 }
 
 img {
@@ -186,4 +218,98 @@ li {
   margin-left: 20px;
   display: flex;
   flex-flow: column;
+}
+
+@media screen and (max-width: 100px) {
+  .other-picture {
+    /* display: block; */
+    text-align: center;
+    width: 40%;
+  }
+  .slide-picture {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .my-skill-content {
+    width: 60%;
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 480px) {
+  * {
+    font-size: 10px;
+  }
+  h2 {
+    font-size: 12px;
+  }
+  /* 480px以下に適用されるCSS（スマホ用） */
+  .section-title {
+    color: #844dbe;
+    border-left: #a76ce5 solid 5px;
+    padding-left: 5px;
+    margin: 10px 0;
+    height: 20px;
+    line-height: 20px;
+    width: 200px;
+    font-size: 20px;
+  }
+  .my-profile-content {
+    display: block;
+  }
+  .pro-content-img {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .prof-detail {
+    padding: 10px;
+  }
+  .picture {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 50%;
+  }
+  .name {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  p {
+    margin: 0 23px;
+    height: inherit;
+    line-height: 17px;
+  }
+  .my-product-content {
+    display: block;
+  }
+
+  .product-title {
+    font-size: 10px;
+    margin: 0;
+    text-align: center;
+  }
+  li {
+    margin: 5px;
+    display: flex;
+    flex-flow: column;
+  }
+  .my-skill-content {
+    margin: 12px 25px 12px;
+    padding: 10px;
+  }
+  .skill-name {
+    font-size: 15px;
+    color: #56f0cb;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .link-picture {
+    max-width: 70px;
+  }
+
+  .other-picture {
+    display: none;
+  }
 }

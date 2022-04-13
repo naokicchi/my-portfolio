@@ -39,13 +39,13 @@ const obj = [
     period: " 制作期間：3ヶ月",
     intro:
       " 紹介文：ヘアスタイル共有SNSアプリケーションです。ヘアスタイルを検索、投稿、お気に入り追加して自分だけのヘアカタログを作成！フォロー機能もあるので自分のみたいユーザーを選別できる！",
-    url: "appStoreURL : https://apps.apple.com/jp/app/hairkarte/id1565355951",
+    url: "appStoreURL : https://apple.co/3AYHZsm",
     icon_img: "images/hairkarte.png",
     img1: "images/hair1.png",
     img2: "images/hair2.png",
     imageClass: "ios-image",
     width: 200,
-    link: "https://apps.apple.com/jp/app/hairkarte/id1565355951",
+    link: "https://apple.co/3AYHZsm",
   },
   {
     title: "ジョブマネ(ios)",
@@ -81,7 +81,7 @@ const obj = [
     period: "制作期間：5日",
     intro:
       "紹介文：葡萄の紹介サイトです。生産数国内TOPの都道府県の葡萄の情報を記載しています。品種紹介もしているのでみてください。",
-    url: "URL : https://naokicchi.github.io/Grapeschi/Final_Ex.html",
+    url: "URL : https://bit.ly/369is5v",
     icon_img: "images/grapes.png",
     img1: "images/grape-img1.png",
     img2: "images/grape-img2.png",
