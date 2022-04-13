@@ -16,14 +16,22 @@ for (let i = 0; i < tabs.length; i++) {
     img1.src = obj[i].img1;
     img1.width = obj[i].width;
     img2.src = obj[i].img2;
-    img2.width = obj[i].width;
     link.href = obj[i].link;
 
     lang.textContent = obj[i].lang;
     intro.textContent = obj[i].intro;
     period.textContent = obj[i].period;
     link_url.textContent = obj[i].url;
+    img1.classList.remove("ios-image");
+    img1.classList.remove("web-image");
+    img1.className = obj[i].imageClass;
+    img2.classList.remove("ios-image");
+    img2.classList.remove("web-image");
+    img2.className = obj[i].imageClass;
+    product_image.classList.remove("ios-image");
+    product_image.classList.remove("web-image");
     product_image.className = obj[i].imageClass;
+    product_image;
     title.textContent = obj[i].title;
     document
       .getElementsByClassName("is-active")[0]
@@ -44,7 +52,6 @@ const obj = [
     img1: "images/hair1.png",
     img2: "images/hair2.png",
     imageClass: "ios-image",
-    width: 200,
     link: "https://apple.co/3AYHZsm",
   },
   {
@@ -58,7 +65,6 @@ const obj = [
     img1: "images/jobmane-image1.png",
     img2: "images/jobmane-image2.png",
     imageClass: "ios-image",
-    width: 200,
     link: "https://apps.apple.com/jp/app/id1609270122",
   },
   {
@@ -72,7 +78,6 @@ const obj = [
     img1: "images/jobmane-web.png",
     img2: "images/jobmane-web-2.png",
     imageClass: "web-image",
-    width: 360,
     link: "https://knobsalmonproject.web.app/",
   },
   {
@@ -86,7 +91,6 @@ const obj = [
     img1: "images/grape-img1.png",
     img2: "images/grape-img2.png",
     imageClass: "web-image",
-    width: 360,
     link: "https://naokicchi.github.io/Grapeschi/Final_Ex.html",
   },
 ];
