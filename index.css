@@ -63,7 +63,6 @@ body {
 }
 
 .prof-detail {
-  width: 50%;
   line-height: 40px;
   display: flex;
   flex-flow: column;
@@ -79,7 +78,6 @@ body {
   font-weight: bold;
   text-align: center;
   font-family: "montserrat";
-  padding: 10px;
 }
 
 .tab-group {
@@ -131,7 +129,7 @@ body {
 
 .product-top {
   text-align: center;
-  margin: 10px;
+  margin: 0px auto 10px auto;
   width: 80%;
 }
 .product-title {
@@ -139,22 +137,28 @@ body {
 }
 
 #product-detail {
-  padding: 15px 20px;
-  width: 90%;
-  margin: 0px auto;
+  margin: 10px;
 }
 #product-image {
   width: 100%;
+  text-align: center;
+  margin: 5px auto;
 }
 .ios-image {
   display: flex;
-  width: 50%;
+  text-align: center;
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .web-image {
   display: flex;
   flex-flow: column;
+  text-align: center;
   width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .picture {
   border-radius: 20%;
@@ -211,7 +215,7 @@ body {
 
 img {
   border-radius: 30px;
-  padding: 5px;
+  margin: 5px;
 }
 
 li {
@@ -231,7 +235,8 @@ li {
     margin-right: auto;
   }
   .my-skill-content {
-    width: 60%;
+    margin-left: 10px;
+    margin-right: 10px;
     padding: 5px;
   }
 }
@@ -242,16 +247,19 @@ li {
   h2 {
     font-size: 12px;
   }
+  .toLink {
+    font-size: 15px;
+  }
   /* 480px以下に適用されるCSS（スマホ用） */
   .section-title {
     color: #844dbe;
     border-left: #a76ce5 solid 5px;
     padding-left: 5px;
-    margin: 10px 0;
+    margin: 14px 0;
     height: 20px;
     line-height: 20px;
     width: 200px;
-    font-size: 20px;
+    font-size: 18px;
   }
   .my-profile-content {
     display: block;
@@ -285,7 +293,7 @@ li {
   }
 
   .product-title {
-    font-size: 10px;
+    font-size: 15px;
     margin: 0;
     text-align: center;
   }
